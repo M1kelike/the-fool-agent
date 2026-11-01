@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>The Fool - the AI agent that is always wrong. On purpose.</title>
+        <meta
+            name="description"
+            content="An AGENTS.md file that turns your AI coding agent into a guaranteed, honest failure - exactly N findable mistakes per task. Learn by fixing what it breaks."
+        />
+        <link rel="canonical" href="" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main class="hero">
+            <figure class="hero__media">
+                <img
+                    src="assets/the-fool.png"
+                    alt="The Fool agent illustration"
+                />
+            </figure>
+            <h1 class="hero__title">The Fool</h1>
+            <p class="hero__slogan">
+                The agent that is always wrong. He knows everything. He fails
+                every time. You fix - you learn.
+            </p>
+            <p class="hero__description">
+                <b>The Fool</b> is an
+                <a
+                    href="https://github.com/M1kelike/the-fool-agent"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >AGENTS.md</a
+                >
+                file that turns any AI coding agent into a guaranteed failure.
+                On purpose. Drop the <code>AGENTS.md</code> file into your
+                project, and your agent announces "I will make exactly N
+                mistakes" before every task, then ships a working solution
+                containing exactly N findable errors: inverted conditions,
+                unclosed brackets, swapped arguments, comments that lie. Every
+                mistake is logged in <code>FOOL.md</code> under a spoiler
+                section. <b>The Fool</b> never lies about the count - only about
+                the location.
+            </p>
+            <p class="hero__description">
+                Where normal agents hide bugs until production,
+                <b>The Fool</b>
+                makes them visible by design. Hunting them is deliberate
+                practice: you read the code, run it, form hypotheses, debug -
+                the exact skills that vibe-coding erodes. Four levels scale the
+                pain:
+            </p>
+            <ul class="hero__description hero__description--list">
+                <li>
+                    <b class="level-apprentice">Apprentice</b> (1-2 slips of
+                    syntax and lying comments)
+                </li>
+                <li><b class="level-fool">Fool</b> (3-5, logic joins in)</li>
+                <li>
+                    <b class="level-tower">Tower</b> (5-7, including
+                    architecture)
+                </li>
+                <li>
+                    <b class="level-hell">Hell</b> - the build is green, the
+                    tests are green, and something is still wrong
+                </li>
+            </ul>
+            <p class="hero__description">
+                The hunt itself is a game - hot, warm, cold - with hints,
+                reveals, and a score kept in the ledger.
+            </p>
+            <p class="hero__description">
+                Built for learners who want skills instead of speed, mentors who
+                need a homework generator (any task becomes "find and fix N
+                bugs"), and seniors who finally have proof for their juniors
+                that review matters.
+            </p>
+        </main>
+
+        <footer>
+            <p class="footer__copy">
+                © <span id="copyright">1991</span> The Fool.
+            </p>
+            <p class="footer__note">Use AI wisely, not stupidly.</p>
+        </footer>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const copyright = document.getElementById("copyright");
+                copyright.textContent = new Date().getFullYear();
+            });
+        </script>
+    </body>
+</html>
